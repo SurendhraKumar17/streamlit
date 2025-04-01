@@ -2024,6 +2024,7 @@ export class App extends PureComponent<Props, State> {
           showToolbar: !isEmbed() || isToolbarDisplayed(),
           showColoredLine:
             (!hideColoredLine && !isEmbed()) || isColoredLineDisplayed(),
+          // host communication manager elements
           pageLinkBaseUrl,
           sidebarChevronDownshift,
           widgetsDisabled:
@@ -2071,7 +2072,6 @@ export class App extends PureComponent<Props, State> {
                 scriptRunId={scriptRunId}
                 scriptRunState={scriptRunState}
                 widgetMgr={this.widgetMgr}
-                widgetsDisabled={widgetsDisabled}
                 uploadClient={this.uploadClient}
                 componentRegistry={this.componentRegistry}
                 formsData={this.state.formsData}
